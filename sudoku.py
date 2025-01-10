@@ -11,7 +11,7 @@ from math import sqrt
 
 class SudokuSolver:
 
-    # Constructor
+    # Constructori
     # ************************
     # cell_options param might look like ["W", "L", "F", "S", "T", "R", "N", "G", "P"]
     # The sizea of the grid will always be the length of cell_options  
