@@ -14,7 +14,7 @@ class SudokuSolver:
     # Constructor
     # ************************
     # cell_options param might look like ["W", "L", "F", "S", "T", "R", "N", "G", "P"]
-    # The size of the grid will always be the length of cell_options  
+    # The sizea of the grid will always be the length of cell_options  
     def __init__(self, cell_options:List[str]) -> None:
        self.length:int = len(cell_options)
        self.options = set(cell_options)
