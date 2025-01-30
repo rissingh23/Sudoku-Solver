@@ -21,7 +21,7 @@ class SudokuSolver:
        self.square_length:int = int(sqrt(self.length))
 
     # finds empty cells within the board to test  
-    def find_empty(self, grid)-> List: #yay
+    def find_empty(self, grid)-> List: #yayaya
         
         for i in range(len(grid)):
             for j in range(len(grid[0])):
@@ -44,7 +44,7 @@ class SudokuSolver:
                     for c in range(self.square_length):
                         #adding each value to the set
                         square.add(grid[i+b][a+c])
-                #removal of "None" spaces as they are already gathered in the "none_spaces" method
+                #removal of "None"   spaces as they are already gathered in the "none_spaces" method
                 square.discard(None)
                 #adds this square to a list with other squares in the same row
                 row_of_squares.append(square)
@@ -128,3 +128,21 @@ class SudokuSolver:
 
         grid[row][col] = None
         return False
+    
+    def test():
+        solver = SudokuSolver(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
+        puzzle = [
+            ["5", "3", None, None, "7", None, None, None, None],
+            ["6", None, None, "1", "9", "5", None, None, None],
+            [None, "9", "8", None, None, None, None, "6", None],
+            ["8", None, None, None, "6", None, None, None, "3"],
+            ["4", None, None, "8", None, "3", None, None, "1"],
+            ["7", None, None, None, "2", None, None, None, "6"],
+            [None, "6", None, None, None, None, "2", "8", None],
+            [None, None, None, "4", "1", "9", None, None, "5"],
+            [None, None, None, None, "8", None, None, "7", "9"],
+        ]
+
+        solution = solver.solve(puzzle)
+        for row in solution:
+            print(row)
