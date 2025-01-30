@@ -7,6 +7,17 @@ It supports **Easy, Medium, and Hard difficulty levels** and allows users to swi
 
 ---
 
+This project uses the following technologies:
+
+- **Frontend:** React, JavaScript, HTML, CSS
+- **Backend:** Flask (Python)
+- **Styling:** CSS
+- **State Management:** React Hooks (`useState`)
+- **API Communication:** Fetch API (REST)
+- **Virtual Environment:** `venv` (for Flask)
+- **Dependency Management:** `npm` (React), `pip` (Flask)
+- **Hosting:** Local development
+
 ## 🚀 Features
 
 ✅ **Instantly solves Sudoku puzzles** (9x9 & 16x16).  
