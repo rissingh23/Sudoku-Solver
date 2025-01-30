@@ -34,9 +34,6 @@ pip install flask flask-cors
 python server.py  # Start the backend
 
 3️⃣ Frontend Setup (React App)
-sh
-Copy
-Edit
 cd ../sudoku-solver
 npm install  # Install dependencies
 npm start  # Start the React frontend
